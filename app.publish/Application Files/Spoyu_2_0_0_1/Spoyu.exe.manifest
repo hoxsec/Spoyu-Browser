@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Spoyu.exe" version="2.0.0.1" publicKeyToken="6a81746cdd87c8ed" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Spoyu" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Spoyu.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Spoyu.exe" size="3826688">
+      <assemblyIdentity name="Spoyu" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>b63iOdf6Up5fv3XIUn3IwGjHXZzdndoo8gX+KcchYHY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="icon.ico" size="370070">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hTWvBKbOSm7jWQCnAIXcVrca9QPglf9TInMPn1xy7+I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Spoyu.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 8.1, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=XFETYHZZ\fsfsdf" issuerKeyHash="ef6a754540f30350c67c32f2f708f55a2689fcda" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>C793/1ugn6M0fQd12jjluflFxcgolzrv4fM85fi6Acg=</DigestValue></Reference></SignedInfo><SignatureValue>UaR18GYcr3oL+rRqygShXpzm768IagIm0v7JxMHE42xNV5e9P9U7LWHtAHTsyxCVJ/KVWlgwLRtvAcSfq9g9oasy7VmHuGDq63AooTPQSwss8FcOUFUSI798053R1+WwkqA2Yqh9jPtfM7DJYIwctuXul4poJ6FfTSgf1hvLh7o=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yoLYnjsmcCwejshuvp36E8O4Q7Rz0KBfNdifnnHpAQYI4WbpNrQqSuYrjWLkKtkua9UXt3iNrilxK6pMXvneu4B999u4tmmphfcCPO4RwI9ocGti4ph4227nVD/H/nwVCpZ7KuKqz/OcM2dKpDNgAJER8kUeYKTnYU+0ifm+XCM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c801baf8e53cf3e1ef3a9728c8c545f9b9e538da75077d34a39fa05bff77bf0b" Description="" Url=""><as:assemblyIdentity name="Spoyu.exe" version="2.0.0.1" publicKeyToken="6a81746cdd87c8ed" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=XFETYHZZ\fsfsdf</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>C5A+WBFKJHsKlLYMhjmRXqqFFAhpmNXcTsIUt1GdF4g=</DigestValue></Reference></SignedInfo><SignatureValue>dGKei9mYdDDweCNmFnx5EcYx/jOseBaG4CcLIxVVYERzSEMnnaKX2ZFPeTdb4W9/G6KpcLBT6RRHeVA5DRXZt+E3/to/aT5ULsw7ve3D2ffi8KpQtKA8/h2S425BCH07R6E6guPZTDHjMFnIyHGwA8CO4q2NWjwMVmQA7FZKm9Q=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yoLYnjsmcCwejshuvp36E8O4Q7Rz0KBfNdifnnHpAQYI4WbpNrQqSuYrjWLkKtkua9UXt3iNrilxK6pMXvneu4B999u4tmmphfcCPO4RwI9ocGti4ph4227nVD/H/nwVCpZ7KuKqz/OcM2dKpDNgAJER8kUeYKTnYU+0ifm+XCM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQHJPSOYRIfrZAXZGKEYqo4DANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AWABGAEUAVABZAEgAWgBaAFwAZgBzAGYAcwBkAGYwHhcNMTQxMDA3MTU1NTM1WhcNMTUxMDA3MjE1NTM1WjApMScwJQYDVQQDHh4AWABGAEUAVABZAEgAWgBaAFwAZgBzAGYAcwBkAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMqC2J47JnAsHo7Ibr6d+hPDuEO0c9CgXzXYn55x6QEGCOFm6Ta0KkrmK41i5CrZLmvVF7d4ja4pcSuqTF753ruAfffbuLZpqYX3AjzuEcCPaHBrYuKYeNtu51Q/x/58FQqWeyriqs/znDNnSqQzYACREfJFHmCk52FPtIn5vlwjAgMBAAEwDQYJKoZIhvcNAQELBQADgYEABm6dEf2WHSAi1IZ7KfW0/q13DI9TAw4N0vwA/9whoDGbpsO0+xGlvLTMvycN3NnigRCyrmpZfGivwxnC5wx9DaSoB7TXM6mChR/blpd0jiTBEeeCkkEnp3yDxUXiCuxDRkaQKboxDu7HQ0dsepmbScnv7IqqPa5kXbATsiiQbcI=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
